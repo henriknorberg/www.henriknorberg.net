@@ -1,0 +1,213 @@
+* { box-sizing: border-box;   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*  Baseline grid from http://drewish.com/tools/vertical-rhythm */
+body { font-size: 100.1%; font-family: 'Open Sans', sans-serif; line-height: 1.5em;} 
+body{
+	background:url("white_texture.png");
+  color:#333;
+}
+
+p { font-size: 1em; /* 16px */ line-height: 1.5em; /* 24px */ margin: 0 0 1.5em 0; }
+
+/* 64px - The quick brown fox jumps over the lazy dog */
+
+
+h1{
+ font-size: 4.5em; 
+  line-height: 1em; 
+  margin-bottom: 0.25em;
+  margin-top: 0em;
+  	padding-bottom: 0.17em;
+}
+	
+h2 { font-size: 3em; /* 48px */ line-height: 1em; /* 48px */ margin-top: 0em; margin-bottom: 0em; letter-spacing:-1px}
+/* 32px - The quick brown fox jumps over the lazy dog */
+h3 { font-size: 2em; /* 32px */ line-height: 1.5em; /* 48px */ margin-top: 0.75em; margin-bottom: 0em; letter-spacing:-1px;}
+/* 24px - The quick brown fox jumps over the lazy dog */
+h4 { font-size: 1.5em; /* 24px */ line-height: 1em; /* 24px */ margin-top: 1em; margin-bottom: 0em; }
+/* 20px - The quick brown fox jumps over the lazy dog */
+
+h5, #main-article h2 { 
+    font-size: 1.25em;
+    line-height: 1em;
+    margin-bottom: 0.75em;
+    margin-top: 0;
+ }
+
+
+h1, h2, h3, h4, h5 {
+font-weight:300; color: #1C2E2E;
+text-shadow:1px 0px #FFF;
+}
+
+
+a{
+  color:#000;
+}
+
+a:focus {
+  outline:transparent;
+}
+
+p a:link {
+  text-decoration: none;
+}
+
+a img {border: 0;}
+
+
+/* ==============
+Animation
+============== */
+
+.initState{
+  opacity:0;
+  
+}
+
+.in{
+  opacity:1;
+
+  -webkit-transition-property:opacity;
+  -webkit-transition-duration:.5s;
+  -webkit-transition-timing-function:ease-in;
+
+  -moz-transition-property:opacity;
+  -moz-transition-duration:.5s;
+  -moz-transition-timing-function:ease-in;
+  
+  -ms-transition-property:opacity;
+  -ms-transition-duration:.5s;
+  -ms-transition-timing-function:ease-in;
+  
+  -o-transition-property:opacity;
+  -o-transition-duration:.5s;
+  -o-transition-timing-function:ease-in;
+}
+
+.out{
+  opacity:0;
+
+  -webkit-transition-property:opacity;
+  -webkit-transition-duration:.25s;
+  -webkit-transition-timing-function:ease-out;
+  -moz-transition-property:opacity;
+  -moz-transition-duration:.25s;
+  -moz-transition-timing-function:ease-out;
+  -ms-transition-property:opacity;
+  -ms-transition-duration:.25s;
+  -ms-transition-timing-function:ease-out;
+  -o-transition-property:opacity;
+  -o-transition-duration:.25s;
+  -o-transition-timing-function:ease-out;
+}
+
+.down{
+  margin-top:0;
+
+  -webkit-transition-property:opacity;
+  -webkit-transition-duration:.15s;
+  -webkit-transition-timing-function:ease-out;
+  -moz-transition-property:opacity;
+  -moz-transition-duration:.15s;
+  -moz-transition-timing-function:ease-out;
+  -ms-transition-property:opacity;
+  -ms-transition-duration:.15s;
+  -ms-transition-timing-function:ease-out;
+  -o-transition-property:opacity;
+  -o-transition-duration:.15s;
+  -o-transition-timing-function:ease-out;
+}
+
+/* ==============
+  Menu
+   ============== */
+
+
+.main-menu-underline{
+  height:.25em;
+  position:absolute;
+  margin-top:-8px;
+}
+
+
+
+nav ul, nav ol {
+    list-style: none outside none;
+    margin: 0.5em 0 0;
+    padding: 0;
+}
+
+nav a{
+  display:block;
+  margin-bottom:.5em;
+  padding:.25em .25em .25em 0em;
+  margin-left:0 ;
+
+  background:none;
+  color:#ddd;
+  width:inherit;
+  text-align:center;
+  text-decoration:none;
+  font-weight:300;
+  transition: color 0.5s ease-out 0s;
+  
+
+}
+
+nav a:hover, nav a:visited{
+  color:#999;
+
+}
+
+nav a:hover {
+  border-bottom:1px solid #333;
+    text-decoration:none;
+    margin-bottom:-1px;
+    color:#333;
+}
+
+nav a:hover{
+
+}
+
+
+
+nav a.activeMenu{
+    color:#333;
+}
+
+
+
+/*Areas */
+
+
+#main-container{
+	margin-top:3em;
+}
+
+#main header{
+   font-size: 0.75em;
+    line-height: 1em;
+}
+
+#main header h1{ 
+    font-size: 6em;
+    line-height: 0.95em;
+    margin-top: .25em;
+    letter-spacing: -3px;
+     margin-left: -5px;
+  
+}
+
+.linkedin, .github, .npm{
+    
+}
+.linkedin{
+   margin-top: 2px;
+   float: left;
+}
+.showgrid { 
+  background: url(grid.png); 
+}
+
