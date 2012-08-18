@@ -1,4 +1,4 @@
-henriknorberg.net
+www.henriknorberg.net
 =================
 
 My website, built on Backbone.
