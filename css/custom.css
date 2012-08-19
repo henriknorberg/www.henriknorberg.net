@@ -89,16 +89,16 @@ Animation
   opacity:0;
 
   -webkit-transition-property:opacity;
-  -webkit-transition-duration:.25s;
+  -webkit-transition-duration:.2s;
   -webkit-transition-timing-function:ease-out;
   -moz-transition-property:opacity;
-  -moz-transition-duration:.25s;
+  -moz-transition-duration:.2s;
   -moz-transition-timing-function:ease-out;
   -ms-transition-property:opacity;
-  -ms-transition-duration:.25s;
+  -ms-transition-duration:.2s;
   -ms-transition-timing-function:ease-out;
   -o-transition-property:opacity;
-  -o-transition-duration:.25s;
+  -o-transition-duration:.2s;
   -o-transition-timing-function:ease-out;
 }
 
@@ -150,6 +150,8 @@ nav a{
   text-align:center;
   text-decoration:none;
   font-weight:300;
+  float:left;
+
   transition: color 0.5s ease-out 0s;
   
 
@@ -183,7 +185,8 @@ nav a.activeMenu{
 
 
 #main-container{
-	margin-top:3em;
+	margin-top:4.5em;
+  transition: margin-top 0.5s ease-out 0.5s;
 }
 
 #main header{
@@ -207,7 +210,16 @@ nav a.activeMenu{
    margin-top: 2px;
    float: left;
 }
+
+
+@media only screen and (max-height: 550px) {
+  #main-container{
+    margin-top:0em;
+  } 
+
+}
+
+
 .showgrid { 
   background: url(grid.png); 
 }
-

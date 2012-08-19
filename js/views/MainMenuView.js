@@ -6,8 +6,6 @@ $(function() {
 
     var p = {}; 
 
-// static interface:
-
 // public properties:
     p.menu = null;
     p.pageData = null;

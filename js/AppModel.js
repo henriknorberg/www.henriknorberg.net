@@ -10,9 +10,7 @@ $(function () {
 
 //	static properties:
     s.debugMode = true;
-    s.TRANS_SHORT = 250;
-    s.TRANS_LONG = 500;
-    s.STEP_SPEED = 250;
+    s.STEP_SPEED = 200;
 
 //	public properties:
     p.defaults = {
