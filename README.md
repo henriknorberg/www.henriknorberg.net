@@ -1,6 +1,6 @@
 ![Screendump](http://henriknorberg.net/screendump.png)
 
-Adaptive site built on Jquery and Backbone.
+Adaptive site built on JQuery and Backbone.
 Next up: 
 
 1. Add simple gallery
