@@ -21,7 +21,7 @@ $(function() {
         this.preHeadline = this.$('.pre-headline');
         this.h1 = this.$('h1');
         this.h2 = this.$('h2');
-        this.article = this.$('section p');
+        this.article = this.$('section .body-tekst');
 
         this.pageElements = [this.preHeadline,this.h1,this.h2,this.article];
          console.log("Article VIEW INIT")  
@@ -35,11 +35,11 @@ $(function() {
         this.stateColor = this.data.pageData.color;
 
        // /* ANIMATE OUT
-         p.transAllOut(this.pageElements);
+        p.transAllOut(this.pageElements);
         var that = this;
         setTimeout(function(){
             that.replaceWithStateData();
-        }, AppModel.STEP_SPEED * Math.floor(this.pageElements.length/2));
+        }, AppModel.STEP_SPEED * Math.floor(this.pageElements.length));
 
         //*/
 
@@ -65,7 +65,7 @@ $(function() {
 
     p.initAnimState = function (elems){
          elems.forEach(function(el){
-            el.addClass('initState').removeClass('in').removeClass('out');
+            el.addClass('init-state').removeClass('in').removeClass('out');
          });
     };
 
@@ -87,11 +87,11 @@ $(function() {
     };
 
     p.transIn = function (el) {
-       el.addClass('in').removeClass('out');
+       el.addClass('init-state').addClass('in').removeClass('out');
     };
 
     p.transOut = function (el) {
-      el.addClass('out').removeClass('in');
+      el.addClass('out').removeClass('in').removeClass('init-state');
     };
 
 	window.ArticleView = Backbone.View.extend(p, {});

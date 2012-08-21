@@ -83,6 +83,11 @@ $(function() {
         });
     }
 
+    //Resize
+    $(window).resize(function() {
+        window.App.menu.updateUnderline()
+    });
+
 
     p.handleClick = function (event){
         var isDisabled = $(event.currentTarget).hasClass("disabled")
