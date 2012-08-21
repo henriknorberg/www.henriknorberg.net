@@ -1,6 +1,10 @@
 ![Screendump](http://henriknorberg.net/screendump.png)
 
-Mobile first sitebuilt on Jquery and Backbone.
-Todo: Swap static json and Apache with a standalone node.js server
+Adaptive site built on JQuery and Backbone.
+Next up: 
+
+1. Add simple gallery
+2. Swap static json and with a standalone node.js server
+3. Build a simple update GUI for it.
 
 www.henriknorberg.net
