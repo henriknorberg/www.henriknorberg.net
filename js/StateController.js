@@ -47,6 +47,8 @@ $(function () {
         this.head = new HeadView({el:$('head'), model:this.model});
         this.menu = new MainMenuView({el:$('header nav'), model:this.model});
         this.article = new ArticleView({el:$('#main article'), model:this.model});
+        
+
 
         this.body = $('body');
         this.html = $('html');
@@ -87,10 +89,7 @@ $(function () {
         this.model.set({
             pageData:              data.pageData,
             stateClass:             data.pageData.classID,
-            featureProductData:     data.featureProductData,
             storyData:              data.story,
-            docs:                   data.docs,
-            tutorials:              data.tutorials
         });
     }
     p.handleScroll = function (event) {

@@ -73,7 +73,7 @@ nav{
 
 nav ul, nav ol {
     list-style: none outside none;
-    margin: 0.5em 0 0;
+    margin: 0.45em 0 0;
     padding: 0;
 
 }
@@ -125,9 +125,15 @@ nav a.activeMenu{
 
 
 #main-container{
-	margin-top:4.5em;
+    margin-bottom: -2em;
+    margin-top: 1.4em;
   transition: margin-top 0.5s ease-out 0.5s;
 }
+
+#main-container .gallery{
+  margin-top:0em;
+}
+
 
 #main header{
    font-size: 0.75em;
@@ -135,20 +141,100 @@ nav a.activeMenu{
 }
 
 #main header h1{ 
-    font-size: 6em;
-    line-height: 0.95em;
-    margin-top: .25em;
+    font-size: 5.5em;
     letter-spacing: -3px;
+    line-height: 0.95em;
+    margin-bottom: 0.3em;
+    margin-top: 0.33em;
     /* margin-left: -5px; */
   
 }
 
 #main .body-tekst{
+  clear:both;
+  margin-bottom:1.5em;
+}
+
+#main .media-area{
+  clear:both;
+  border-top:1px solid #e6e6e6;
+
+  padding-top: .75em;
+}
+
+#main .media-item{
+    float:left;
+    width:30%;
+}
+
+
+#main .thumb{ 
+  width:100%;
 
 }
 
+#main .view h2  {
+   color: #fff;
+  text-shadow:none;
+  margin-top:5px;
+  font-size:1.25em;
+}
+
+#main .view p {
+    margin-top: 70px;
+  } 
+
+
+#main .modal-media-init{
+
+}
+
+#main .modal-media{
+  width:55%;
+  height:50%;
+  z-index: 100001;
+
+  position:absolute;
+   
+   margin-top: -200px;
+
+
+  -webkit-transition: position .5s cubic-bezier(0.99,0.00,0.00,1.00), opacity .6s ease-out;
+  -moz-transition: position .5s cubic-bezier(0.99,0.00,0.00,1.00), opacity .6s ease-out;
+  -o-transition: position .5s ease-out, opacity .6s ease-out;
+  transition: position 1s cubic-bezier(0.99,0.00,0.00,1.00), opacity 1s ease-out;
+
+     opacity:1;
+
+}
+
+.modal-container{
+  width: 80%;
+    transition: opacity 1s ease-out;
+}
+.modal .mask{
+    padding-top:1.5em;
+} 
+
+.modal h2 {
+  margin-left:0.25em;
+  margin-bottom:0.25em;
+}
+.modal p {
+  margin-left:1em;
+  
+}
+.modal img{
+  width:100%;
+}
+
+
+.footer {
+    border-top:1px solid #e6e6e6;
+}
+
 .linkedin, .github, .npm{
-    
+
 }
 .linkedin{
    margin-top: 2px;
@@ -161,12 +247,48 @@ nav a.activeMenu{
     margin-top:0em;
   } 
 
+  .view p {
+    margin-top: 80px;
+  } 
+
 }
 
 
-.showgrid { 
-  background: url(grid.png); 
-}
+/* ============
+    WIDE: Main
+   ============ */
+
+  #main article{
+    float:left;
+    width:100%;
+  }
+    
+  #main aside{
+    float:right;
+    width:0%;
+  }
+
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+  #main .view h2  {
+  font-size:1.5em;
+} 
+
+#main .view p {
+    margin-top: 80px;
+  } 
+
+  .wrapper{
+    width:1026px; /* 1140px - 10% for margins */
+    margin:0 auto;
+  }
+
+} 
 
 
 
@@ -220,4 +342,10 @@ Animation
   -o-transition-timing-function:ease-out;
 
 
+}
+
+
+
+.showgrid { 
+  background: url(images/grid.png); 
 }

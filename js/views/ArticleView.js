@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////
-//*          	HEAD View
+//*          	Article View
 /////////////////////////////////////////////////
 
 $(function() {
@@ -15,6 +15,7 @@ $(function() {
 
 //  public methods:
     p.initialize = function(params) {
+        
         this.model.bind('change:state', this.updatePage, this);
     
         
@@ -22,9 +23,11 @@ $(function() {
         this.h1 = this.$('h1');
         this.h2 = this.$('h2');
         this.article = this.$('section .body-tekst');
+        this.mediaItem =  $("head #media-tmpl").html();
 
+        this.$(".media-area").hide();
         this.pageElements = [this.preHeadline,this.h1,this.h2,this.article];
-         console.log("Article VIEW INIT")  
+         console.log("Article VIEW INIT " + this.mediaItem);
     };
 
 //  protected methods:
@@ -32,14 +35,18 @@ $(function() {
         console.log("ArticleView updatePage: "+appData[value]);
 
         this.data = appData[value];
+        this.state = this.data.pageData.url;
         this.stateColor = this.data.pageData.color;
+
+        //hide media
+        this.$(".media-area").slideUp();
 
        // /* ANIMATE OUT
         p.transAllOut(this.pageElements);
         var that = this;
         setTimeout(function(){
             that.replaceWithStateData();
-        }, AppModel.STEP_SPEED * Math.floor(this.pageElements.length));
+        }, AppModel.STEP_SPEED *  Math.floor(this.pageElements.length));
 
         //*/
 
@@ -47,6 +54,7 @@ $(function() {
     };
 
     p.replaceWithStateData = function () {
+        var that = this;
         console.log(" Title  "+this.data.story.title);
         
         //Henrik todo: make clean up functions in case new content fails
@@ -56,12 +64,42 @@ $(function() {
         this.h2.html( this.data.story.subTitle);
         this.article.html( this.data.story.story);
 
+        //IF MEDIA BUILD LIST
+        if (this.data.media){ 
+            //this.renderMedia(this.data.media.images);
+            var gallery = new GalleryView({el:$('.media-area')});
+            gallery.render(this.data.media.images, this.mediaItem);
+
+            this.mediaElements = this.$(".media-area");
+            setTimeout( function(){
+                that.mediaElements.slideDown((that.mediaElements.length % 3) * 500);
+                //that.mediaItem.show();
+            }, (AppModel.STEP_SPEED * that.pageElements.length) + 300);
+
+        } else {
+            
+           /**/
+        }
+
+
+        //{
+       
+
+        if (this.state == "projects"){
+          this.$("#main-container").addClass("gallery");
+        } else{
+            this.$("#main-container").removeClass("gallery");
+        }
+
         p.initAnimState(this.pageElements);
 
         p.transAllIn(this.pageElements);
 
 
     };
+
+
+
 
     p.initAnimState = function (elems){
          elems.forEach(function(el){
