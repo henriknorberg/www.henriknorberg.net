@@ -1,10 +1,10 @@
 /////////////////////////////////////////////////
-//*              STATE Controller
+//*              PageView
 /////////////////////////////////////////////////
 
 $(function () {
 
- console.log("StateController INIT") 
+ console.log("PageView INIT") 
 
     var p = {};
 
@@ -107,6 +107,6 @@ $(function () {
         }
     }
 
-    window.StateController = Backbone.View.extend(p,{});
+    window.PageView = Backbone.View.extend(p,{});
 
 });

@@ -202,15 +202,14 @@ nav a.activeMenu{
   -webkit-transition: position .5s cubic-bezier(0.99,0.00,0.00,1.00), opacity .6s ease-out;
   -moz-transition: position .5s cubic-bezier(0.99,0.00,0.00,1.00), opacity .6s ease-out;
   -o-transition: position .5s ease-out, opacity .6s ease-out;
-  transition: position 1s cubic-bezier(0.99,0.00,0.00,1.00), opacity 1s ease-out;
+  transition: position .5s cubic-bezier(0.99,0.00,0.00,1.00), opacity 1s ease-out;
 
      opacity:1;
 
 }
 
-.modal-container{
+#modalContainer{
   width: 80%;
-    transition: opacity 1s ease-out;
 }
 .modal .mask{
     padding-top:1.5em;
@@ -230,7 +229,7 @@ nav a.activeMenu{
 
 
 .footer {
-    border-top:1px solid #e6e6e6;
+   /* border-top:1px solid #e6e6e6;*/
 }
 
 .linkedin, .github, .npm{
@@ -288,6 +287,11 @@ nav a.activeMenu{
     margin:0 auto;
   }
 
+
+  #modalContainer{
+    width: inherit;
+  }
+
 } 
 
 
@@ -295,6 +299,18 @@ nav a.activeMenu{
 /* ==============
 Animation
 ============== */
+.init-fade{
+  opacity:0;
+}
+
+.fade-in{
+  opacity:1;
+
+  -webkit-transition: opacity .6s ease-out;
+  -moz-transition:  opacity .6s ease-out;
+  -o-transition:  opacity .6s ease-out;
+  transition: opacity .6s ease-out;
+}
 
 .init-state{
   opacity:0;
@@ -302,6 +318,7 @@ Animation
 }
 
 .in{
+  /*refactor ".in" to .fade-in and .move-in-left*/
   margin-left:0px;
   opacity:1;
   width:100%;

@@ -128,18 +128,18 @@
 <!-- VIEWS -->
 <script src="js/views/MediaModalView.js"></script>
 <script src="js/views/GalleryView.js"></script>
+
 <script src="js/views/HeadView.js"></script>
 <script src="js/views/MainMenuView.js"></script>
 <script src="js/views/ArticleView.js"></script>
+<script src="js/views/PageView.js"></script>
 
 
-<!-- CONTROLLERS  -->
-<script src="js/StateController.js"></script>
 
 <script type="text/javascript">
 	// Iinit quasi controller
 	$(window).load(function() {
-		window.App = new StateController({model:new AppModel(), el:$('body')});
+		window.App = new PageView({model:new AppModel(), el:$('body')});
 	});
 </script>
 
@@ -151,6 +151,10 @@
 	s.parentNode.insertBefore(g,s)}(document,'script'));
 //*/
 </script>
+
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(66633938); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66633938ns.gif" /></p></noscript>
 
 </body>
 </html>

@@ -29,7 +29,7 @@
 
                  this.modElement = t;
                  
-                this.$el.html( t.html());
+                this.$el.html(t.html());
                
                 //window.setTimeout( _.bind( this.escapeRoute, this), 5000);
 

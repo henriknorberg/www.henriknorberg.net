@@ -17,26 +17,22 @@ $(function() {
 
 //  public methods:
     p.initialize = function(params) {
-        this.model.bind('change:state', this.updatePage, this);
+        console.log("HeadView INIT");
+        this.model.bind('change:state', this.updateData, this);
         this.favicon = $('#favicon');
         this.description = $('meta[name=description]');
-        console.log("HeadView INIT") 
     };
 
 //  protected methods:
-    p.updateState = function (model, value, options) {
+    p.updateData = function (model, value, options) {
         console.log("HEADView _updateState: "+appData[value]);
 
         this.data = appData[value];
         this.favicon.attr('href', this.data.headData.favicon);
-        
-        if(this.model.get('showDemoView')){
-            this.replaceWithDemoData();
-        } else {
-            this.replaceWithStateData();
-        }
+
+        this.updateView();
     };
-    p.replaceWithStatePage = function () {
+    p.updateView = function () {
         document.title = this.data.headData.titleTag;
         this.description.attr('content', this.data.headData.description);
     };

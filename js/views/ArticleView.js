@@ -16,7 +16,7 @@ $(function() {
 //  public methods:
     p.initialize = function(params) {
         
-        this.model.bind('change:state', this.updatePage, this);
+        this.model.bind('change:state', this.updateData, this);
     
         
         this.preHeadline = this.$('.pre-headline');
@@ -31,8 +31,8 @@ $(function() {
     };
 
 //  protected methods:
-    p.updatePage = function (model, value, options) {
-        console.log("ArticleView updatePage: "+appData[value]);
+    p.updateData = function (model, value, options) {
+        console.log("ArticleView updateData: "+appData[value]);
 
         this.data = appData[value];
         this.state = this.data.pageData.url;
@@ -45,15 +45,15 @@ $(function() {
         p.transAllOut(this.pageElements);
         var that = this;
         setTimeout(function(){
-            that.replaceWithStateData();
+            that.updateView();
         }, AppModel.STEP_SPEED *  Math.floor(this.pageElements.length));
 
         //*/
 
-        //this.replaceWithStateData();
+        //this.updateView();
     };
 
-    p.replaceWithStateData = function () {
+    p.updateView = function () {
         var that = this;
         console.log(" Title  "+this.data.story.title);
         
@@ -64,42 +64,39 @@ $(function() {
         this.h2.html( this.data.story.subTitle);
         this.article.html( this.data.story.story);
 
+        //animate elements in
+        p.initAnimState(this.pageElements);
+        p.transAllIn(this.pageElements);
+
         //IF MEDIA BUILD LIST
-        if (this.data.media){ 
+        if (this.data.media){
             //this.renderMedia(this.data.media.images);
             var gallery = new GalleryView({el:$('.media-area')});
             gallery.render(this.data.media.images, this.mediaItem);
 
-            this.mediaElements = this.$(".media-area");
-            setTimeout( function(){
-                that.mediaElements.slideDown((that.mediaElements.length % 3) * 500);
-                //that.mediaItem.show();
-            }, (AppModel.STEP_SPEED * that.pageElements.length) + 300);
+            //open area
+            this.mediaElement = this.$(".media-area");
+             setTimeout( function(){
+                    that.mediaElement.slideDown(800);
+                },600);
+            
+            //fade in elements
+            this.mediaElements = this.$(".media-area .media-item");
+
+            that.mediaElements.addClass("init-fade");
+            that.mediaElements.each(function(i,item){
+                setTimeout( function(){
+                    $(item).addClass("fade-in");
+                    //that.mediaItem.show();
+                }, (AppModel.STEP_SPEED * i) + 1000); 
+             });
 
         } else {
             
            /**/
         }
 
-
-        //{
-       
-
-        if (this.state == "projects"){
-          this.$("#main-container").addClass("gallery");
-        } else{
-            this.$("#main-container").removeClass("gallery");
-        }
-
-        p.initAnimState(this.pageElements);
-
-        p.transAllIn(this.pageElements);
-
-
     };
-
-
-
 
     p.initAnimState = function (elems){
          elems.forEach(function(el){

@@ -38,7 +38,7 @@ var appData = {
 		},
 		"headData": {
 			"favicon": 	"./favicon.ico",
-			"titleTag": 	"Cases",
+			"titleTag": 	"Projects",
 			"metaData": {
 			}
 		},
@@ -56,12 +56,20 @@ var appData = {
 		"media": {
 			"images":[
 				{
-					"thumb":"images/proj/timbjorn.jpg",
-					"title": "Tim Bjorn",
-					"shortDesc": "Tim info is coming soon",
-					"desc": "Tim info is coming soon",
+					"thumb":"images/proj/haandbogen.jpg",
+					"title": "Håndbogen",
+					"shortDesc": "Håndbogen info is coming soon",
+					"desc": "Håndbogen info is coming soon",
 					"url":"#"
 				},
+				{
+					"thumb":"images/proj/orgreen2010.jpg",
+					"title": "Orgreen 2010",
+					"shortDesc": "Orgreen info is coming soon",
+					"desc": "Orgreen info is coming soon",
+					"url":"#"
+				},
+
 				{
 					"thumb":"images/proj/ikon.jpg",
 					"title": "IKON",
@@ -70,38 +78,10 @@ var appData = {
 					"url":"#"
 				},
 				{
-					"thumb":"images/proj/LL1.jpg",
-					"title": "Lev Lykkeligt",
-					"shortDesc": "LevLykkeligt info is coming soon",
-					"desc": "LevLykkeligt info is coming soon",
-					"url":"#"
-
-				},
-				{
-				"thumb":"images/proj/2plus1.jpg",
-					"title": "2plus1",
-					"desc": "2plus1 info is coming soon",
-					"shortDesc": "2plus1 info is coming soon",
-					"url":"#"
-				},
-				{
-					"thumb":"images/proj/inoue1.jpg",
-					"title": "The Inoue Brothers",
-					"shortDesc": "Inoue brothers info is coming soon",
-					"desc": "Inoue brothers info is coming soon",
-					"url":"#"
-				},
-				{
-					"thumb":"images/proj/orgreen1.jpg",
-					"title": "Ørgreen 2009",
-					"shortDesc": "Ørgreen info is coming soon",
-					"desc": "Ørgreen info is coming soon",
-					"url":"#"
-				},				{
-					"thumb":"images/proj/timh2.jpg",
-					"title": "Tim Hartley",
-					"shortDesc": "Tim Hartley info is coming soon",
-					"desc": "Tim Hartley info is coming soon",
+					"thumb":"images/proj/timbjorn.jpg",
+					"title": "Tim Bjorn",
+					"shortDesc": "Tim info is coming soon",
+					"desc": "Tim info is coming soon",
 					"url":"#"
 				},
 				{
@@ -117,7 +97,68 @@ var appData = {
 					"shortDesc": "Juul Funder info is coming soon",
 					"desc": "Juul Funder info is coming soon",
 					"url":"#"
-				},				{
+				},					
+				{
+					"thumb":"images/proj/LL1.jpg",
+					"title": "Lev Lykkeligt",
+					"shortDesc": "LevLykkeligt info is coming soon",
+					"desc": "LevLykkeligt info is coming soon",
+					"url":"#"
+
+				},
+
+				{
+					"thumb":"images/proj/drc.jpg",
+					"title": "Danish Refugee Council",
+					"shortDesc": "DRC info is coming soon",
+					"desc": "DRC info is coming soon",
+					"url":"#"
+				},
+				{
+					"thumb":"images/proj/psykinst.jpg",
+					"title": "Psykinst",
+					"shortDesc": "Psykinst info is coming soon",
+					"desc": "Psykinst info is coming soon",
+					"url":"#"
+				},
+
+				{
+					"thumb":"images/proj/iuc.jpg",
+					"title": "IUC",
+					"shortDesc": "The International University College of Turin info is coming soon",
+					"desc": "The International University College of Turin info is coming soon",
+					"url":"#"
+				},
+				{
+				"thumb":"images/proj/2plus1.jpg",
+					"title": "2plus1",
+					"desc": "2plus1 info is coming soon",
+					"shortDesc": "2plus1 info is coming soon",
+					"url":"#"
+				},
+				{
+					"thumb":"images/proj/inoue2011.jpg",
+					"title": "The Inoue Brothers",
+					"shortDesc": "Inoue brothers info is coming soon",
+					"desc": "Inoue brothers info is coming soon",
+					"url":"#"
+				},
+				{
+					"thumb":"images/proj/environment.jpg",
+					"title": "Environment London",
+					"shortDesc": "Environment London info is coming soon",
+					"desc": "Environment London info is coming soon",
+					"url":"#"
+				},
+				{
+					"thumb":"images/proj/orgreen1.jpg",
+					"title": "Ørgreen 2010",
+					"shortDesc": "Ørgreen info is coming soon",
+					"desc": "Ørgreen info is coming soon",
+					"url":"#"
+				},
+			
+				{
 					"thumb":"images/proj/sscph.jpg",
 					"title": "SSCPH",
 					"shortDesc": "SSCPH info is coming soon",
