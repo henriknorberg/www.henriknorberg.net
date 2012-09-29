@@ -35,7 +35,6 @@
 
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
-
 	<!--[if lt IE 9]>
 	<script src="js/libs/html5-3.4-respond-1.1.0.min.js"></script>
 	<![endif]-->
@@ -73,8 +72,13 @@
 				
 				<section>
 					<h2></h2>
-					<div class="body-tekst"><p></p></div>
+					<div class="body-tekst" style="display:none">
+						<p>I have 14 years of experience in planing, designing and executing web sites. I also enjoy teaching other people about programing, design and marketing. I have a strong interest in Node.js, Drupal and software patterns, but have a keen eye for UX and love to work with graphic design.</p>
+					</div>
 					<div class="media-area">
+						<div class="media-area-wrapper">
+						
+						</div>
 					</div>
 					
 				</section>
@@ -135,11 +139,19 @@
 <script src="js/views/PageView.js"></script>
 
 
-
 <script type="text/javascript">
+	
+	//empty body tekst
+	$('.body-tekst').html("");
+
+	//Empty fields
+	$(document).ready(function() {
+
+	});
 	// Iinit quasi controller
 	$(window).load(function() {
 		window.App = new PageView({model:new AppModel(), el:$('body')});
+
 	});
 </script>
 

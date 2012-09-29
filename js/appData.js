@@ -23,7 +23,7 @@ var appData = {
 			"preHeadline":"Hi. My name is",
 			"title": "<span class=''>Henrik A. Norberg</span>",
 			"subTitle": "<span class=''>I make websites and write javascript...</span>",
-			"story": "Interested in Drupal, Node.js and software patterns. Always looking for a way to make websites better, faster and more maintainable."
+			"story": "<p>I have 14 years of experience in planing, designing and executing web sites. I also enjoy teaching other people about programing, design and marketing. I have a strong interest in Node.js, Drupal and software patterns, but have a keen eye for UX and love to work with graphic design.</p>"
 		},
 		"aside": [
 			{ "title": "Aside", "content": "Aside front page" }
@@ -50,40 +50,11 @@ var appData = {
 			"preHeadline":"I made these",
 			"title": "<span class=''>Projects</span>",
 			"subTitle": "<span class=''>This is some stuff I have done</span>",
-			"story": "A few of the productions I have been working on..."
+			"story": "A few of the projects I have been working on..."
 		},
 
 		"media": {
 			"images":[
-				{
-					"thumb":"images/proj/haandbogen.jpg",
-					"title": "Håndbogen",
-					"shortDesc": "Håndbogen info is coming soon",
-					"desc": "Håndbogen info is coming soon",
-					"url":"#"
-				},
-				{
-					"thumb":"images/proj/orgreen2010.jpg",
-					"title": "Orgreen 2010",
-					"shortDesc": "Orgreen info is coming soon",
-					"desc": "Orgreen info is coming soon",
-					"url":"#"
-				},
-
-				{
-					"thumb":"images/proj/ikon.jpg",
-					"title": "IKON",
-					"shortDesc": "IKON info is coming soon",
-					"desc": "IKON info is coming soon",
-					"url":"#"
-				},
-				{
-					"thumb":"images/proj/timbjorn.jpg",
-					"title": "Tim Bjorn",
-					"shortDesc": "Tim info is coming soon",
-					"desc": "Tim info is coming soon",
-					"url":"#"
-				},
 				{
 					"thumb":"images/proj/refer1.jpg",
 					"title": "Refer Staer",
@@ -97,7 +68,38 @@ var appData = {
 					"shortDesc": "Juul Funder info is coming soon",
 					"desc": "Juul Funder info is coming soon",
 					"url":"#"
-				},					
+				},
+								{
+				"thumb":"images/proj/2plus1.jpg",
+					"title": "2plus1",
+					"desc": "2plus1 info is coming soon",
+					"shortDesc": "2plus1 info is coming soon",
+					"url":"#"
+				},
+				{
+					"thumb":"images/proj/timbjorn.jpg",
+					"title": "Tim Bjorn",
+					"shortDesc": "Tim info is coming soon",
+					"desc": "Tim info is coming soon",
+					"url":"#"
+				},				
+				{
+					"thumb":"images/proj/haandbogen.jpg",
+					"title": "Håndbogen",
+					"shortDesc": "Håndbogen info is coming soon",
+					"desc": "Håndbogen info is coming soon",
+					"url":"#"
+				},
+
+
+				{
+					"thumb":"images/proj/ikon.jpg",
+					"title": "IKON",
+					"shortDesc": "IKON info is coming soon",
+					"desc": "IKON info is coming soon",
+					"url":"#"
+				},
+				
 				{
 					"thumb":"images/proj/LL1.jpg",
 					"title": "Lev Lykkeligt",
@@ -105,6 +107,21 @@ var appData = {
 					"desc": "LevLykkeligt info is coming soon",
 					"url":"#"
 
+				},
+				{
+					"thumb":"images/proj/iuc.jpg",
+					"title": "IUC",
+					"shortDesc": "The International University College of Turin info is coming soon",
+					"desc": "The International University College of Turin info is coming soon",
+					"url":"#"
+				},
+
+				{
+					"thumb":"images/proj/psykinst.jpg",
+					"title": "Psykinst",
+					"shortDesc": "Psykinst info is coming soon",
+					"desc": "Psykinst info is coming soon",
+					"url":"#"
 				},
 
 				{
@@ -115,32 +132,26 @@ var appData = {
 					"url":"#"
 				},
 				{
-					"thumb":"images/proj/psykinst.jpg",
-					"title": "Psykinst",
-					"shortDesc": "Psykinst info is coming soon",
-					"desc": "Psykinst info is coming soon",
-					"url":"#"
-				},
-
-				{
-					"thumb":"images/proj/iuc.jpg",
-					"title": "IUC",
-					"shortDesc": "The International University College of Turin info is coming soon",
-					"desc": "The International University College of Turin info is coming soon",
-					"url":"#"
-				},
-				{
-				"thumb":"images/proj/2plus1.jpg",
-					"title": "2plus1",
-					"desc": "2plus1 info is coming soon",
-					"shortDesc": "2plus1 info is coming soon",
-					"url":"#"
-				},
-				{
 					"thumb":"images/proj/inoue2011.jpg",
 					"title": "The Inoue Brothers",
 					"shortDesc": "Inoue brothers info is coming soon",
 					"desc": "Inoue brothers info is coming soon",
+					"url":"#"
+				},				
+				{
+					"thumb":"images/proj/orgreen2010.jpg",
+					"title": "Orgreen 2010",
+					"shortDesc": "Orgreen info is coming soon",
+					"desc": "Orgreen info is coming soon",
+					"url":"#"
+				},
+
+
+				{
+					"thumb":"images/proj/orgreen1.jpg",
+					"title": "Ørgreen 2008",
+					"shortDesc": "Ørgreen info is coming soon",
+					"desc": "Ørgreen info is coming soon",
 					"url":"#"
 				},
 				{
@@ -150,14 +161,6 @@ var appData = {
 					"desc": "Environment London info is coming soon",
 					"url":"#"
 				},
-				{
-					"thumb":"images/proj/orgreen1.jpg",
-					"title": "Ørgreen 2010",
-					"shortDesc": "Ørgreen info is coming soon",
-					"desc": "Ørgreen info is coming soon",
-					"url":"#"
-				},
-			
 				{
 					"thumb":"images/proj/sscph.jpg",
 					"title": "SSCPH",
@@ -194,8 +197,8 @@ var appData = {
 		"story": {
 			"preHeadline":"We should be in",
 			"title": "<span class=''>Contact</span>",
-			"subTitle": "<span class=''>Telex me when you have a chance</span>",
-			"story": "Or drop me an email at <a href='mailto:hire@henriknorberg.net'>hire@henriknorberg.net</a>"
+			"subTitle": "<span class=''>I am currently looking for a position in the Bay area</span>",
+			"story": "Feel free to contact me via my <a href='http://www.linkedin.com/pub/henrik-a-norberg/0/293/120'>Linkedin profile</a> if you want to hire me."
 		},
 		"aside": [
 			{ "title": "Aside", "content": "Aside cases" }

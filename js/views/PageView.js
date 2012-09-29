@@ -53,9 +53,10 @@ $(function () {
         this.body = $('body');
         this.html = $('html');
 
-        //  Setup hashbang routes
+        //  Setup routes
         this.appRouter = new AppRouter({model:this.model});
         Backbone.history.start({pushState: false, root: "/"});
+
     }
 
 //  private methods
@@ -85,6 +86,7 @@ $(function () {
         this.updateModel(model, value);
     }
     p.updateModel = function(model,value) {
+
         var data = appData[value];
         this.model.set({
             pageData:              data.pageData,

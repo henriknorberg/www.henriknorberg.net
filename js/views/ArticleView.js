@@ -58,7 +58,10 @@ $(function() {
         console.log(" Title  "+this.data.story.title);
         
         //Henrik todo: make clean up functions in case new content fails
-
+        
+        //open body-tekst
+        $(".body-tekst").css("display","block");
+        
         this.preHeadline.html(this.data.story.preHeadline);
         this.h1.html( this.data.story.title).css({"color":this.stateColor});
         this.h2.html( this.data.story.subTitle);
@@ -71,7 +74,7 @@ $(function() {
         //IF MEDIA BUILD LIST
         if (this.data.media){
             //this.renderMedia(this.data.media.images);
-            var gallery = new GalleryView({el:$('.media-area')});
+            var gallery = new GalleryView({el:$('.media-area-wrapper')});
             gallery.render(this.data.media.images, this.mediaItem);
 
             //open area

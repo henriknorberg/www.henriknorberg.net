@@ -16,6 +16,9 @@ $(function() {
     p.setRegElement = null;
 
     p.activeMenu =null;
+    p.activeMenuItem =null;
+    
+    p.prevActiveMenu =null;
 
     p.events = {
         'click .main-menu li a': 'handleClick',
@@ -42,10 +45,11 @@ $(function() {
 //  protected methods:
     p.updatePage = function (model, value, options) {
         
+        
 
         var titleTag = appData[value].banner.description;
         this.$('.main-menu a').attr('title', titleTag);
-        
+        this.activeMenuItem = appData[value].pageData.classId;
         this.pageData = appData[value].pageData;
         this.tempMenuItem = this.$('.' + appData[value].pageData.classID);
         this.pageColor = this.pageData.color;
@@ -71,16 +75,33 @@ $(function() {
 
     //  HOVER STATES
     p.handleMouseEnter = function (event) {
-        console.log("Mouse Over Menu");
+
+        /*
+        var newXPos = Math.floor($(event.currentTarget).position().left);
+        this.underline.css({"left" : newXPos, "background-color" : this.pageColor});
+        */
+        
+        /*
+        console.log("Mouse Over Menu " +     $(event.currentTarget).attr("class") + " | " + this.pageData.classID);
+        this.prevActiveMenu = this.pageData.classID;
         this.model.set({
-            //menuPage: $(event.currentTarget).attr("data-page");
+            menuState: $(event.currentTarget).attr("class")
         });
+        */
     }
     p.handleMouseLeave = function (event) {
-        console.log("Mouse Out Menu");
+        /*
+        var newXPos = Math.floor(this.setRegElement.position().left);
+        this.underline.css({"left" : newXPos, "background-color" : this.pageColor});
+        */
+
+        /*
+        console.log("Mouse Out " + this.model.get('menuState'));
+        //this.prevActiveMenu = $(event.currentTarget).attr("class");
         this.model.set({
-            menuPage: this.model.get('page')
+            menuState: this.prevActiveMenu//this.model.get('menuState')
         });
+        */
     }
 
     //Resize
