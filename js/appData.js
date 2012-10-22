@@ -23,7 +23,7 @@ var appData = {
 			"preHeadline":"Hi. My name is",
 			"title": "<span class=''>Henrik A. Norberg</span>",
 			"subTitle": "<span class=''>I make websites and write javascript...</span>",
-			"story": "<p>I have 14 years of experience in planing, designing and executing web sites. I also enjoy teaching other people about programing, design and marketing. I have a strong interest in Node.js, Drupal and software patterns, but have a keen eye for UX and love to work with graphic design.</p>"
+			"story": "<p>I have 14 years of experience in planning, designing and executing web sites. I also enjoy teaching other people about programing, design and marketing. I have a strong interest in Node.js, Drupal and software patterns, but have a keen eye for UX and love to work with graphic design.</p>"
 		},
 		"aside": [
 			{ "title": "Aside", "content": "Aside front page" }
@@ -126,7 +126,7 @@ var appData = {
 
 				{
 					"thumb":"images/proj/drc.jpg",
-					"title": "Danish Refugee Council",
+					"title": "DRC",
 					"shortDesc": "DRC info is coming soon",
 					"desc": "DRC info is coming soon",
 					"url":"#"
@@ -156,7 +156,7 @@ var appData = {
 				},
 				{
 					"thumb":"images/proj/environment.jpg",
-					"title": "Environment London",
+					"title": "Environment",
 					"shortDesc": "Environment London info is coming soon",
 					"desc": "Environment London info is coming soon",
 					"url":"#"

@@ -6,7 +6,6 @@
         initialize:
             function()
             {
-
                 
             },
         events:
@@ -19,22 +18,13 @@
                 event.preventDefault();
                  $(".modal-media").removeClass("modal-media");
                  console.log("MediaModalView: "+ this.$el );
-                //this.hideModal();
-
-                //$('#test-permanent').append( "<span style='font-size:70%;'>. I enjoyed that.</span>");
             },
         render:
             function(t)
             {
 
-                 this.modElement = t;
-                 
+                this.modElement = t;
                 this.$el.html(t.html());
-               
-                //window.setTimeout( _.bind( this.escapeRoute, this), 5000);
-
-
-
                 return this;
             },
 
