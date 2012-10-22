@@ -9,9 +9,6 @@ body{
 
 p { font-size: 1em; /* 16px */ line-height: 1.5em; /* 24px */ margin: 0 0 1.5em 0; }
 
-/* 64px - The quick brown fox jumps over the lazy dog */
-
-
 h1{
  font-size: 4.5em; 
   line-height: 1em; 

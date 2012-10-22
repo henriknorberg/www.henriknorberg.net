@@ -65,5 +65,4 @@ $(function () {
 
 //	create object
 	window.AppRouter = Backbone.Router.extend(p, {});
-    //window.AppRouter.history.start({pushState:true});
 });
