@@ -8,4 +8,4 @@ Next up:
 3. Build a simple update GUI for it.
 4. Create adaptive Image service in Node
 
-www.henriknorberg.net
+www.henriknorberg.net 
